@@ -1,5 +1,6 @@
 import sys
 input = sys.stdin.readline
+sys.setrecursionlimit(int(1e6))
 
 n = int(input())
 people = [0] + list(map(int,input().split()))

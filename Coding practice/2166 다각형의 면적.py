@@ -15,4 +15,5 @@ for i in range(1,n-1):
 
     answer += ((p2[0]-p1[0])*(p3[1]-p1[1]) - (p2[1]-p1[1])*(p3[0]-p1[0]))/2
 
+
 print( round(abs(answer),2) )

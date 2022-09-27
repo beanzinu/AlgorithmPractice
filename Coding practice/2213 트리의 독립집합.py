@@ -34,9 +34,9 @@ def solve(currentNode):
 solve(1)
 print( max(dp[1]) )
 if dp[1][1] > dp[1][0]:
-    for node in nodes[1][1]:
+    for node in sorted(nodes[1][1]):
         print(node,end=" ")
 else:
-    for node in nodes[1][0]:
+    for node in sorted(nodes[1][0]):
         print(node,end=" ")
 
