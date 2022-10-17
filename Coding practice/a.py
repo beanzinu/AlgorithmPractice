@@ -1,6 +1,5 @@
-from collections import deque
+
 def solution(cap, n, deliveries, pickups):
-    answer = 0
     
     c1 = 0
     ans1 = 0
@@ -15,8 +14,6 @@ def solution(cap, n, deliveries, pickups):
                         add = deliveries[i]//cap + 1
                     c1 += add*cap
                     ans1 += add*(i+1)
-                    c1 -= deliveries[i]
-                    deliveries[i] = 0
                 else:
                     c1 -= deliveries[i]
                     deliveries[i] = 0
@@ -34,8 +31,6 @@ def solution(cap, n, deliveries, pickups):
                         add = pickups[i]//cap + 1
                     c2 += add*cap
                     ans2 += add*(i+1)
-                    c2 -= pickups[i]
-                    pickups[i] = 0
                 else:
                     c2 -= pickups[i]
                     pickups[i] = 0
